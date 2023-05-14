@@ -50,15 +50,15 @@ class AuthApi {
   }
 
   static setUserToken(key, value) {
-    return sessionStorage.setItem(key, value);
+    return localStorage.setItem(key, value);
   }
 
   static getUserToken(key) {
-    return sessionStorage.getItem(key);
+    return localStorage.getItem(key);
   }
 
   static destroyUserToken(key) {
-    return sessionStorage.removeItem(key);
+    return localStorage.removeItem(key);
   }
 }
 
